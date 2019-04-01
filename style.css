@@ -1,8 +1,84 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navBar {
+    display: flex;
+    height: 50px; 
+    padding-bottom: 0px;
+    font-size: calc(18px + 0.25vmax);
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    width: 100vw;
+}
+
+.navContainer{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.navContainer li {
+    margin: 15px;
+}
+
+.navBarContactItem {
+    flex: 1;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.splash {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.secProject{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    width: 100vw;
+    padding: 10px;
+}
+
+.secProject div {
+    display: flex;
+    background-color: #262626;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    width: calc(150px + 1.5vw);
+    height: calc(150px + 1.5vw);
+    align-items: center;
+    justify-content: center;
+}
+
+.secProject div img {
+    width: calc(40px + 0.5vw);
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(12px + 0.2vw);
+    width: 100vw;
+}
+
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
     cursor:pointer;
-    display:inline-block;
+    display:flex;
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -10,12 +86,14 @@
     transition: all 0.3s linear;
 }
 
+
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
